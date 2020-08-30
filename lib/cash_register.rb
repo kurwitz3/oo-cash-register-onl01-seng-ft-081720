@@ -41,6 +41,7 @@ def add_item(item, price, quantity = 1)
   
   def   void_last_transaction 
     @total -= @price
+     if @items[]
   
   end 
   
