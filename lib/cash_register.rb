@@ -39,7 +39,7 @@ def add_item(item, price, quantity = 1)
   end 
   
   def   void_last_transaction 
-    @total - price  
+    @total - price * quantity  
     
     @total 
   end 
