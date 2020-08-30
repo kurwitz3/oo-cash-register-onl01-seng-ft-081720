@@ -1,19 +1,19 @@
 require 'pry'
 class CashRegister 
   attr_accessor :total, :discount, :price  
-def initialize( discount = 0   )
-@total = 0   
-@discount = discount
-@items = []
 
+def initialize( discount = 0   )
+  @total = 0   
+  @discount = discount
+  @items = []
 end 
 
-    def add_item(item, price, quantity = 1)
-    @price = price
-    @total += price * quantity
+def add_item(item, price, quantity = 1)
+  @price = price
+  @total += price * quantity
     if quantity > 1
-      counter = 0
-      while counter < quantity
+       counter = 0
+     while counter < quantity
         @items << item
         counter += 1
       end
@@ -32,9 +32,11 @@ end
      "There is no discount to apply."
     end 
   end 
+  
   def items 
     @items 
   end 
+  
   def   void_last_transaction 
     @total - items.price
     @total 
