@@ -11,6 +11,7 @@ end
 
 def add_item(item, price, quantity = 1)
   @price = price
+  @quanity - quanity 
   @total += price * quantity
   if quantity > 1
          counter = 0
@@ -34,11 +35,13 @@ def add_item(item, price, quantity = 1)
      "There is no discount to apply."
     end 
   end 
-  
+  def items 
+    @items 
+  end 
   
   
   def   void_last_transaction 
-    @total -= @price
+    @total -= @price * @qunaity 
      if @items[]
   end 
   end 
