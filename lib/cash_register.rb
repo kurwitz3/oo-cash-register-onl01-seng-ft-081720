@@ -21,7 +21,7 @@ def add_item(item, price, quantity = 1)
     else
       @items << item
     end
-    binding.pry 
+   
   end
   
  
