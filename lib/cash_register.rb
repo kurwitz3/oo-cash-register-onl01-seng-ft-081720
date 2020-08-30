@@ -22,11 +22,9 @@ def add_item(item, price, quantity = 1)
     else
       @items << item
     end
-   
-  end
+   end
   
- 
-  def apply_discount 
+ def apply_discount 
     if @discount > 0 
     discount_is =  (@total * @discount ) / 100
        @total -= discount_is 
@@ -39,15 +37,7 @@ def add_item(item, price, quantity = 1)
     @items 
   end 
   
-  
-  def   void_last_transaction 
-    @total -= @price * @quantity
-  
+   def void_last_transaction 
+      @total -= @price * @quantity
+   end 
   end 
-  
- 
-
-
-
-
-end 
