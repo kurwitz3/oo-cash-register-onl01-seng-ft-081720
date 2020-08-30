@@ -11,8 +11,9 @@ end
 
 def add_item(item, price, quantity = 1)
   @price = price
+ 
   if quantity > 1
-       @total += price * quantity
+      
        counter = 0
      while counter < quantity
         @items << item
